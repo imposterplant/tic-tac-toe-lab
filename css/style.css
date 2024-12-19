@@ -1,0 +1,41 @@
+body {
+  background-color: lavender;
+  font-family: system-ui, sans-serif;
+  margin: 0; 
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+h1 {
+  margin: 10px 0; 
+}
+
+h2 {
+  margin: 10px 0; 
+}
+
+.board {
+  display: flex; 
+  flex-wrap: wrap; 
+  width: 325px; 
+  height: 325px; 
+  margin-top: 20px; 
+  border: 2px solid black; 
+  box-sizing: border-box; 
+}
+
+.sqr {
+  width: 30%; 
+  aspect-ratio: 1/1; 
+  border: 3px solid black;
+  font-size: 64px;
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  
+}
