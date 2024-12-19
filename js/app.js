@@ -61,22 +61,22 @@ const winningCombos = [
   function handleClick(evt) {
     const squareIndex = parseInt(evt.target.id);
   
-    // If the square is already taken or the game is over, return early
+    
     if (board[squareIndex] || winner) return;
   
-    // Place the piece
+   
     placePiece(squareIndex);
   
-    // Check for a winner
+    
     checkForWinner();
   
-    // Check for a tie
+    
     checkForTie();
   
-    // Switch the player's turn
+    
     switchPlayerTurn();
   
-    // Render the updated state
+   
     render();
   }
   
@@ -103,6 +103,6 @@ const winningCombos = [
     turn = turn === 'X' ? 'O' : 'X';
   }
   
-  // Initialize the game on page load
+  
   init();
   
